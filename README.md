@@ -9,18 +9,18 @@ The goal is to demonstrate feature engineering, model comparison, and production
 Results:
 Linear Regression MAE:	2.56, RMSE:	5.38
 Gradient Boosting	MAE:  2.22,	RMSE: 4.45	~17% improvement
-----------------------------------------------------------------------------------------------------------------------------------------------
+
 Gradient Boosting performs significantly better, showing the value of non-linear modeling for geospatial data.
-----------------------------------------------------------------------------------------------------------------------------------------------
+
 Data used to train the models comes from kaggle: https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction/data?select=train.csv
-----------------------------------------------------------------------------------------------------------------------------------------------
+
 Requirements:
   pandas
   numpy
   scikit-learn
   matplotlib
   seaborn
-----------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Pipeline Overview:
 
