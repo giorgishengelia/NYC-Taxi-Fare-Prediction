@@ -28,6 +28,8 @@ Pipeline Overview:
 1. Load Data
 
 Reads 2,000,000 rows from the NYC taxi dataset.
+![Load Data](assets/Load_data.png)
+
 
 2. Clean Data
 
@@ -35,14 +37,14 @@ Removes:
 
 Impossible fares (≤0 or ≥$200)
 
-Passenger_count outliers
+Passenger count outliers
 
 Latitude/longitude outside NYC
+![Clean Data](assets/Clean_data.png)
 
 3. Feature Engineering
 
 Adds:
-
 - True Distance in KM derived from Haversine distance between pickup and dropoff
 - Estimated trip minutes
 - Hour of day
@@ -50,16 +52,22 @@ Adds:
 - Passenger count
 - Rush hour or not
 - Pickup/dpropoff location
+![Add Features](assets/Add_features.png)
 
-4. Modeling
+4. Split Data into Train / Test:
+![Split Data into Train / Test](assets/Split_into_Train-Test.png)
+
+5. Modeling
 
 Two models are trained:
 
 - Linear Regression
+![Train Linear Regression](assets/Trai_Linear_Regression.png)
 
 - Gradient Boosting Regressor
+![Train Gradient Boosting](assets/Train_Gradient_boosting.png)
 
-5. Evaluation
+6. Evaluation
 
 Metrics include:
 
@@ -68,3 +76,10 @@ Mean Absolute Error (MAE)
 Root Mean Squared Error (RMSE)
 
 Feature importance is visualized for GBR.
+![Feature_Importance](assets/Features.png)
+
+7. Pipeline Execution:
+- Features
+![Execution](assets/Pipeline_Execution.png)
+- Execution
+![Execution II](assets/Execution_II.png)
